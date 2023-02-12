@@ -19,7 +19,7 @@ export default {
     methods : {
         getcall(){
             try {
-                axios.get('http://127.0.0.1:8000/')
+                axios.get('http://127.0.0.1:8000/') // setup you api endpoint here.
                 .then(response => this.message = response["data"]["message"]);
             }catch (err) {
                 this.message = err;
@@ -43,7 +43,7 @@ export default {
                     };
             try
                 {
-                    axios.post('http://127.0.0.1:8000/api', requestbody)
+                    axios.post('http://127.0.0.1:8000/api', requestbody) // setup your api endpoint
                     .then(response => this.postcallmessage = response)
                 }
             catch (err)

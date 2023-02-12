@@ -1,6 +1,5 @@
 <script>
 import Web3 from "web3"
-4
 export default {
   data() {
     return {
